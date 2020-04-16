@@ -6,9 +6,9 @@ declare let FileReaderSync: any;
 export class Md5FileHasher {
     private _reader: any;
 
-    private _md5: Md5;
-    private _part: number;
-    private _length: number;
+    private _md5!: Md5;
+    private _part!: number;
+    private _length!: number;
     private _blob: any;
 
 
@@ -18,10 +18,11 @@ export class Md5FileHasher {
         private _partSize: number = 1048576,         // 1mb
     ) {
         this._configureReader();
+        this._length;// denoify: so it is read
     }
 
 
-    public hash(blob) {
+    public hash(blob: any) {
         const self = this;
 
         self._blob = blob;
@@ -39,7 +40,7 @@ export class Md5FileHasher {
         });
     }
 
-    private _hashData(e) {
+    private _hashData(e: any) {
         let self = this;
 
         self._md5.appendByteArray(new Uint8Array(e.target.result));
@@ -56,7 +57,7 @@ export class Md5FileHasher {
     private _processPart() {
         const self = this;
         let endbyte = 0;
-        let current_part;
+        let current_part: any;
 
         self._part += 1;
 

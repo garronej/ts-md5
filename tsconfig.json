@@ -9,7 +9,6 @@
         "sourceMap": true,
         "declaration": true,
         "importHelpers": true,
-        "strictNullChecks": false,
         "outDir": "./dist",
         "lib": [
             "dom",
@@ -21,11 +20,16 @@
         "types": [
             "jasmine",
             "node"
-        ]
+        ],
+        "noUnusedLocals": true, // added for denoify
+		"noUnusedParameters": true, // added for denoify
+		"strict": true // !important
     },
     "exclude": [
         "node_modules",
-        "dist"
+        "dist",
+        "./deno_dist",
+        "./mod.ts"
     ],
     "files": [
         "./src/md5_file_hasher.ts",

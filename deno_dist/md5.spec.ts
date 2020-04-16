@@ -1,4 +1,4 @@
-import {Md5} from './md5';
+import {Md5} from './md5.ts';
 
 declare const describe: any;
 declare const beforeEach: any;

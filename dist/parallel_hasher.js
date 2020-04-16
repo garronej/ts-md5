@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.ParallelHasher = void 0;
 var ParallelHasher = /** @class */ (function () {
     function ParallelHasher(workerUri, workerOptions) {
         this._queue = [];

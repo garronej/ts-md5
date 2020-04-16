@@ -1,3 +1,36 @@
+
+# Regarding denoify
+
+- Changes made to ``package.json``
+- Changes made to ``tsconfig.json``
+- Some straight forward changes had to be made on the sources to comply with the stricter typescript directive, [checkout the ``src/*.ts`` files in the commit](https://github.com/garronej/ts-md5/commit/920536cb8756ca6a460e4abaea17f5e52e3fbefb)
+
+Then
+```bash
+> npm run build
+```
+have been run witch has resulted in ``./mod.ts`` and ``./deno_dist`` being created.  
+  
+Finally a release named ``1.2.7`` have been created.  
+
+Now it is possible to import ``"ts-md5"`` in deno:
+```typescript
+import { Md5 } from "https://raw.github.com/garronej/ts-md5/1.2.7/mod.ts";
+```
+
+And to use it as dependency in packages that uses denoify:
+
+package.json
+```json
+{
+     "dependencies": {
+          "ts-md5": "garronej/ts-md5#1.2.7"
+     }
+}
+```
+
+( following is the original ``"ts-md5"`` readme )
+
 # Introduction
 
 A MD5 implementation for TypeScript

@@ -9,7 +9,7 @@ export declare class ParallelHasher {
     private _processing;
     private _ready;
     constructor(workerUri: string, workerOptions?: WorkerOptions);
-    hash(blob: any): any;
+    hash(blob: any): Promise<unknown>;
     terminate(): void;
     private _processNext;
     private _recievedMessage;

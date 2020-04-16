@@ -1,4 +1,4 @@
-import {Md5FileHasher} from './md5_file_hasher';
+import {Md5FileHasher} from './md5_file_hasher.ts';
 
 declare const describe: any;
 declare const it: any;

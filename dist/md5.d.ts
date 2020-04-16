@@ -1,6 +1,6 @@
 export declare class Md5 {
-    static hashStr(str: string, raw?: boolean): string | Int32Array;
-    static hashAsciiStr(str: string, raw?: boolean): string | Int32Array;
+    static hashStr(str: string, raw?: boolean): string | Int32Array | undefined;
+    static hashAsciiStr(str: string, raw?: boolean): string | Int32Array | undefined;
     private static stateIdentity;
     private static buffer32Identity;
     private static hexChars;
@@ -20,11 +20,11 @@ export declare class Md5 {
     appendAsciiStr(str: string): this;
     appendByteArray(input: Uint8Array): this;
     getState(): {
-        buffer: any;
+        buffer: string;
         buflen: number;
         length: number;
         state: number[];
     };
     setState(state: any): void;
-    end(raw?: boolean): string | Int32Array;
+    end(raw?: boolean): string | Int32Array | undefined;
 }

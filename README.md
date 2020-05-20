@@ -1,8 +1,8 @@
 
 # Regarding denoify
 
-- Changes made to ``package.json``
-- Changes made to ``tsconfig.json``
+- Changes made to [``package.json``](https://github.com/garronej/ts-md5/commit/3d72eced7f75da133ac75d23cec102d74f5b8ab2#diff-b9cfc7f2cdf78a7f4b91a753d10865a2)
+- Changes made to [``tsconfig.json``](https://github.com/garronej/ts-md5/commit/3d72eced7f75da133ac75d23cec102d74f5b8ab2#diff-e5e546dd2eb0351f813d63d1b39dbc48)
 - Some straight forward changes had to be made on the sources to comply with the stricter typescript directive, [checkout the ``src/*.ts`` files in the commit](https://github.com/garronej/ts-md5/commit/920536cb8756ca6a460e4abaea17f5e52e3fbefb)
 
 Then

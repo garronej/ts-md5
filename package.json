@@ -15,7 +15,7 @@
     "ts-loader": "^2.3.1",
     "typescript": "latest",
     "webpack": "^3.3.0",
-    "denoify": "0.2.10"
+    "denoify": "^0.3.9"
   },
   "dependencies": {},
   "description": "TypeScript MD5 implementation",
@@ -37,8 +37,7 @@
     "url": "git+https://github.com/cotag/ts-md5.git"
   },
   "scripts": {
-    "build": "node node_modules/typescript/bin/tsc --p . && cat ./dist/md5_file_hasher.js ./src/worker.js >> ./dist/md5.js && grep -v exports. ./dist/md5.js > ./dist/md5_worker.js && node node_modules/typescript/bin/tsc && npm run denoify",
-    "denoify": "npx denoify",
+    "build": "node node_modules/typescript/bin/tsc --p . && cat ./dist/md5_file_hasher.js ./src/worker.js >> ./dist/md5.js && grep -v exports. ./dist/md5.js > ./dist/md5_worker.js && node node_modules/typescript/bin/tsc && denoify",
     "test": "node node_modules/karma/bin/karma start karma.conf.js"
   },
   "types": "dist/md5.d.ts",

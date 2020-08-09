@@ -15,7 +15,7 @@ Finally a release named ``v1.2.7`` have been created.
 
 Now it is possible to import ``"ts-md5"`` in deno:
 ```typescript
-import { Md5 } from "https://raw.github.com/garronej/ts-md5/v1.2.7/mod.ts";
+import { Md5 } from "https://raw.github.com/garronej/ts-md5/v1.2.7/deno_dist/mod.ts";
 ```
 
 And to use it as dependency in packages that uses denoify:

@@ -11,11 +11,11 @@ Then
 ```
 have been run witch has resulted in ``./mod.ts`` and ``./deno_dist`` being created.  
   
-Finally a release named ``1.2.7`` have been created.  
+Finally a release named ``v1.2.7`` have been created.  
 
 Now it is possible to import ``"ts-md5"`` in deno:
 ```typescript
-import { Md5 } from "https://raw.github.com/garronej/ts-md5/1.2.7/mod.ts";
+import { Md5 } from "https://raw.github.com/garronej/ts-md5/v1.2.7/mod.ts";
 ```
 
 And to use it as dependency in packages that uses denoify:
@@ -24,7 +24,7 @@ package.json
 ```json
 {
      "dependencies": {
-          "ts-md5": "garronej/ts-md5#1.2.7"
+          "ts-md5": "garronej/ts-md5#v1.2.7"
      }
 }
 ```
